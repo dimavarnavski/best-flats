@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flat.css">
+    <title>ул.4 Красноармейская,2</title>
+</head>
+
+<body>
+    <div class="modal">
+        <form>
+            <h2>заказать звонок</h2>
+            <input type="text" placeholder="имя">
+            <input type="text" placeholder="номер телефона">
+            <button>заказать звонок</button>
+        </form>
+    </div>
+    <header>
+        <div class="container">
+            <a href="/" class="logo">
+                <img src="logoIcon.svg" alt="">
+            </a>
+            <input type="checkbox" name="" id="check">
+            <label for="check">
+                <span></span>
+            </label>
+            <ul class="menu">
+                <li>
+                    <a href="#/">квартиры</a>
+                    <nav>
+                        <a class="flatType" href="">однокомнатная</a>
+                        <a class="flatType" href="">двукомнатная</a>
+                        <a class="flatType" href="">большой загородный</a>
+                    </nav>
+                </li>
+                <li>
+                    <a href="comments.html" target="_blank">отзывы</a>
+                </li>
+                <li>
+                    <a href="about.html" target="_blank">о нас</a>
+                </li>
+            </ul>
+            <div class="call">
+                <a href="">
+                    <img src="phone.svg" alt="">
+                    <h3>8 (800) 956 8364</h3>
+                </a>
+                <button id="callButton">заказать звонок</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>ул.4 Красноармейская,2</h2>
+            <div class="gallery">
+                <img src="flat3 (1).jpg" alt="">
+                <img src="flat3 (3).jpg" alt="">
+                <img src="flat3 (5).jpg" alt="">
+                <img src="flat3 (4).jpg" alt="">
+                <img src="flat3 (2).jpg" alt="">
+            </div>
+            <div class="flatInfo">
+                <p>$145/night</p>
+                <a href="#/">проверить доступность</a>
+                <p>Один из самых комфортабельных домов в нашей продаже. Он находится в историческом и экологически чистом районе.<br> Вас ждут самые новейшие системы отопления и водоснабжения. Хорошая транспортная доступность, развитая инфраструктура, большое
+                    количество музеев вокруг и мест для проведения досуга.
+                </p>
+                <ul>
+                    <li>
+                        <section>
+                            <img src="люди.svg" alt="">
+                            <p>3 человека</p>
+                        </section>
+                        <section>
+                            <img src="кровати.svg" alt="">
+                            <p>2 кровати</p>
+                        </section>
+                    </li>
+                    <li>
+                        <img src="markIcon.svg" alt="">
+                        <p>хороший уровень жизни и приятная обстановка на улице, интерьер квартиры выполнен в стиле ампир.</p>
+                    </li>
+                    <li>
+                        <img src="markIcon.svg" alt="">
+                        <p>двухместная кровать, одноместная кровать, вся мебель ручного изготовления.</p>
+                    </li>
+                </ul>
+            </div>
+            <iframe src="https://yandex.ru/map-widget/v1/-/CCU4MVrr8A" width="560" height="400" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <a href="/" class="logo">
+                <img src="logoIcon.svg" alt="">
+            </a>
+            <ul class="menu">
+                <li>
+                    <a href="#/">квартиры</a>
+                </li>
+                <li>
+                    <a href="">отзывы</a>
+                </li>
+                <li>
+                    <a href="">о нас</a>
+                </li>
+            </ul>
+            <div class="footerContacts">
+                <a href="" id="location">
+                    <img src="locationIcon.svg" alt="">
+                    <p>Cанкт-Петербург, Садовая ул-а,18</p>
+                </a>
+                <div>
+                    <a href="#/">
+                        <img src="phone.svg" alt="">
+                        <h3>8 (800) 956 8364</h3>
+                    </a>
+                    <div class="social">
+                        <a href="#/">
+                            <img src="fbIcon.svg" alt="">
+                        </a>
+                        <a href="#/">
+                            <img src="vkIcon.svg" alt="">
+                        </a>
+                        <a href="#/">
+                            <img src="igIcon.svg" alt="">
+                        </a>
+                        <a href="#/">
+                            <img src="mailIcon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let gallery = document.getElementsByClassName("gallery")[0]
+        let flatInfo = document.getElementsByClassName("flatInfo")[0]
+        let map = document.getElementsByTagName("iframe")[0]
+        console.log(map);
+        map.style.height = gallery.offsetHeight - flatInfo.offsetHeight + "px"
+    </script>
+</body>
+
+</html>
